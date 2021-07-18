@@ -40,7 +40,7 @@ struct ContentView: View {
                 Rectangle()
                     .fill(Color.red)
                     .frame(width: 200, height: 200)
-                    .transition(.asymmetric(insertion: .scale, removal: .opacity))
+                    .transition(.pivot)
             }
         }
         .animation(.easeIn)
